@@ -38,7 +38,7 @@ img {
 }
 
 .marker-list {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
@@ -53,9 +53,7 @@ img {
     margin: 0 auto;
 }
 
-header a {
-    padding: 24px 0px;
-}
+
 
 .flex-container {
     display: flex;
@@ -71,16 +69,27 @@ header a {
     color: var(--title-color);
     margin-right: 93px;
 }
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
 .logo-span {
     color: var(--accent-color);
 }
+
 .header-list {
     display: flex;
 }
+
 .header-list>.item:not(:last-child) {
     margin-right: 50px;
 }
+
 .marker-list .nav-link {
+    padding: 32px 0;
+    display: block;
     font-size: var(--font-text);
     font-weight: var(--font-weight-main);
     line-height: 1.14;
@@ -88,10 +97,12 @@ header a {
     color: var(--dark-color);
     letter-spacing: 0.02em;
 }
+
 .nav-link:hover,
 .nav-link:focus {
     color: var(--accent-color);
 }
+
 .marker-list .nav-link.current {
     color: var(--accent-color);
 }
@@ -106,6 +117,7 @@ header a {
 }
 
 .contact-link {
+    padding: 32px 0;
     font-size: var(--font-text);
     font-weight: var(--font-weight-main);
     line-height: 1.14;
@@ -119,11 +131,14 @@ header a {
 .contact-link:focus {
     color: var(--accent-color);
 }
+
 .section {
     padding: 94px 0;
 }
 
 .logo {
+    display: inline-block;
+    margin-bottom: 20px;
     font-family: var(--secondary-font), sans-serif;
     text-decoration: none;
     color: var(--accent-color);
@@ -133,9 +148,7 @@ header a {
     margin-right: 93px;
 }
 
-.logo-header-web {
-    color: var(--title-color);
-}
+
 
 
 
@@ -196,6 +209,7 @@ header a {
     background-color: var(--accent-color);
     color: var(--button-color);
 }
+
 /* hero */
 .hero-section {
     padding-bottom: 200px;
@@ -203,11 +217,17 @@ header a {
 }
 
 .hero {
+    padding: 200px 0;
     background-color: var(--background-title);
     text-align: center;
 }
 
 .hero-title {
+    width: 693px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    letter-spacing: 0.06em;
     background: var(--background-title);
     color: var(--button-color);
     font-family: inherit;
@@ -288,7 +308,7 @@ header a {
     margin-left: -30px;
     margin-top: -30px;
 
-    flex-basis: calc((100% - 90px) / 4);
+    flex-basis: calc((100% - 90px) / 3);
 }
 
 .flex-box-img .item {
@@ -309,6 +329,8 @@ header a {
 }
 
 .item-pic {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
     margin-left: 30px;
     text-align: center;
 
@@ -343,6 +365,8 @@ header a {
     letter-spacing: 0.06em;
     color: var(--title-color);
 
+    margin-bottom: 4px;
+    margin-top: 20px;
     margin-bottom: 4px;
 }
 
@@ -384,6 +408,11 @@ header a {
     color: var(--primary-text-color);
 
     padding: 20px 24px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 
@@ -413,6 +442,10 @@ header a {
 .footer-list:hover,
 .footer-list:focus {
     color: var(--accent-color);
+}
+
+.footer .item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .btn-menu.active {
