@@ -145,7 +145,7 @@ img {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    margin-right: 93px;
+    
 }
 
 
@@ -366,7 +366,7 @@ img {
     color: var(--title-color);
 
     margin-bottom: 4px;
-    margin-top: 20px;
+    
     margin-bottom: 4px;
 }
 
@@ -400,19 +400,11 @@ img {
 }
 
 .text {
-    font-family: inherit;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
     text-decoration: none;
     color: var(--primary-text-color);
-
-    padding: 20px 24px;
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
 }
 
 
